@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_add_edit_note"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_blue"
+    tools:context=".presentation.AddNoteActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/material_pattern_dimension"
+        android:hint="@string/label_title"
+        app:boxBackgroundMode="none"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        app:boxBackgroundMode="none"
+        app:errorEnabled="true"
+        android:hint="@string/label_content"
+        app:layout_constraintBottom_toTopOf="@id/tv_note_select_color_blue"
+        app:layout_constraintTop_toBottomOf="@id/til_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"
+            android:maxLines="30"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_save"
+        android:contentDescription="@string/description_button_add_note"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tv_note_select_color_blue"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape_blue"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tv_note_select_color_yellow"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_note_select_color_blue"
+        android:background="@drawable/shape_yellow" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tv_note_select_color_orange"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_note_select_color_yellow"
+        android:background="@drawable/shape_orange"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tv_note_select_color_red"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/material_pattern_dimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_note_select_color_orange"
+        android:background="@drawable/shape_red"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Note App</string>
+    <string name="your_notes">Suas notas</string>
+    <string name="string_title">Titulo</string>
+    <string name="string_date">Data</string>
+    <string name="string_color">Cor</string>
+    <string name="string_ascending">Crescente</string>
+    <string name="string_descending">Decrescente</string>
+    <string name="description_button_add_note">Button add note</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="label_title">Escolha um titulo</string>
+    <string name="label_content">Coloque o conteúdo</string>
+</resources>
