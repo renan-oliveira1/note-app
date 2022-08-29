@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="circular_yellow">
+        <item name="android:background">@drawable/shape_yellow</item>
+    </style>
+    <style name="circular_blue">
+        <item name="android:background">@drawable/shape_blue</item>
+    </style>
+    <style name="circular_orange">
+        <item name="android:background">@drawable/shape_orange</item>
+    </style>
+    <style name="circular_red">
+        <item name="android:background">@drawable/shape_red</item>
+    </style>
+
+
+
+</resources>
